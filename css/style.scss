@@ -1,0 +1,81 @@
+$color1: #008fcc;
+$color2: #003d73;
+
+body {
+  font: normal 12px Verdana, Arial, sans-serif;
+  background-color: white;
+  border: 0 2px;
+}
+
+header {
+  h1 {
+    color: $color1;
+    font-size: 120px;
+    text-align: center;
+    font-variant-caps: petite-caps;
+    position: relative;
+    font-weight: 300;
+    letter-spacing: 20px;
+    top:150px;
+    text-shadow:  0px 0px 2px white, 0px 0px 2px white;
+  }
+  #headerimage {
+    width:100%;
+    background-image: url("../img/headerimage.jpg");
+    background-position: -100px center;
+    height:300px;
+  }
+}
+
+@media only screen and (max-width: 830px){
+    header {
+      h1 {
+      font-weight: 500;
+      top:0px;
+    }
+  }
+}
+
+h2 {
+  color:$color1;
+  text-transform: uppercase;
+  text-shadow:  2px 2px 3px lightgray;
+}
+
+h4{
+  font-variant-caps: small-caps;
+  text-shadow:  2px 2px 3px lightgray;
+  color:black;
+
+}
+nav {
+  a {
+    @extend h4;
+    font-size: 25pt;
+  }
+  a:hover{
+    color:$color1;
+  }
+}
+
+
+
+.musiclist {
+  list-style: none;
+  audio {
+    vertical-align: middle;
+    padding-left: 20px;
+  }
+  span {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  li {
+    padding: 15px 0;
+  }
+  li:before {
+    content: '🎵';
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+}

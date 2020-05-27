@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body {
+  font: normal 12px Verdana, Arial, sans-serif;
+  background-color: white;
+  border: 0 2px;
+}
+
+header h1 {
+  color: #008fcc;
+  font-size: 120px;
+  text-align: center;
+  font-variant-caps: petite-caps;
+  position: relative;
+  font-weight: 300;
+  letter-spacing: 20px;
+  top: 150px;
+  text-shadow: 0px 0px 2px white, 0px 0px 2px white;
+}
+header #headerimage {
+  width: 100%;
+  background-image: url("../img/headerimage.jpg");
+  background-position: -100px center;
+  height: 300px;
+}
+
+@media only screen and (max-width: 830px) {
+  header h1 {
+    font-weight: 500;
+    top: 0px;
+  }
+}
+h2 {
+  color: #008fcc;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px lightgray;
+}
+
+h4, nav a {
+  font-variant-caps: small-caps;
+  text-shadow: 2px 2px 3px lightgray;
+  color: black;
+}
+
+nav a {
+  font-size: 25pt;
+}
+nav a:hover {
+  color: #008fcc;
+}
+
+.musiclist {
+  list-style: none;
+}
+.musiclist audio {
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.musiclist span {
+  padding-left: 10px;
+  font-size: 20px;
+}
+.musiclist li {
+  padding: 15px 0;
+}
+.musiclist li:before {
+  content: "🎵";
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
